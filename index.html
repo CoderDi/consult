@@ -37,10 +37,24 @@
           <span class="menu-close btn--full js-menu-close"></span>
           <span class="menu-title">Меню</span>
           <span class="get-city js-getcity">Санкт-Петербург</span>
+          <div class="socials socials--header socials--menu">
+            <a href="" class="socials__item socials__item--whatsapp"></a>
+            <a href="" class="socials__item socials__item--telegram"></a>
+            <a href="" class="socials__item socials__item--viber"></a>
+            <a href="" class="socials__item socials__item--skype"></a>
+          </div>
+          <div class="header-contacts header-contacts--menu">
+            <a href="tel:8 (800) 707 14 20" class="header-contacts__link phone header__phone">8 (800) 707 14 20</a> <br>
+            <a href="mailto:info@petroconsalt.ru" class="header-contacts__link mail header__mail">info@petroconsalt.ru</a>
+          </div>
         </div>
 
         <div class="menu-main">
           <div class="menu-main__container js-menu-scroll scrollable">
+            <div class="menu-main-mobile">
+              <span class="menu-title menu-title-mobile">Меню</span>
+              <span class="get-city js-getcity get-city-mobile">Санкт-Петербург</span>
+            </div>
             <ul class="menu-list">
               <li class="menu-item">
                 <a class="menu-item__link">Сертификация</a>
@@ -590,7 +604,10 @@
       <div class="docs-slider js-docs-slider">
         <div class="doc">
           <div class="doc__container">
-            <div class="doc__img"><img src="images/doc1.jpg" alt=""></div>
+            <div class="doc__img">
+              <img src="images/doc1.jpg" alt="">
+              <a class="doc-img-over"></a>
+            </div>
             <div class="doc__plash">
               <strong class="doc__plash_title">Уведомление</strong>
               <span class="doc__plash_text">о внесении в реестр аккредитованных организаций</span>
@@ -600,7 +617,10 @@
 
         <div class="doc">
           <div class="doc__container">
-            <div class="doc__img"><img src="images/doc2.png" alt=""></div>
+            <div class="doc__img">
+              <img src="images/doc2.png" alt="">
+              <a class="doc-img-over"></a>
+            </div>
             <div class="doc__plash">
               <strong class="doc__plash_title">Уведомление</strong>
               <span class="doc__plash_text">о внесении в реестр аккредитованных организаций</span>
@@ -610,7 +630,10 @@
 
         <div class="doc">
           <div class="doc__container">
-            <div class="doc__img"><img src="images/doc1.jpg" alt=""></div>
+            <div class="doc__img">
+              <img src="images/doc1.jpg" alt="">
+              <a class="doc-img-over"></a>
+            </div>
             <div class="doc__plash">
               <strong class="doc__plash_title">Уведомление</strong>
               <span class="doc__plash_text">о внесении в реестр аккредитованных организаций</span>
@@ -620,12 +643,34 @@
 
         <div class="doc">
           <div class="doc__container">
-            <div class="doc__img"><img src="images/doc1.jpg" alt=""></div>
+            <div class="doc__img">
+              <img src="images/doc1.jpg" alt="">
+              <a class="doc-img-over"></a>
+            </div>
             <div class="doc__plash">
               <strong class="doc__plash_title">Уведомление</strong>
               <span class="doc__plash_text">о внесении в реестр аккредитованных организаций</span>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="price">
+    <div class="wrapper">
+      <div class="price__wrapper">
+        <div class="price-left">
+          <form class="price__form">
+            <strong class="price__form_title">Запрос прайс листа</strong>
+            <span class="price__form_subtitle">Укажите свой e-mail и мы вышлем Вам актуальный прайс с расценками на все наши услуги</span>
+            <input type="email" class="input input--popup" placeholder="Введите e-mail">
+            <input type="submit" value="Запросить прайс лист" class="submit btn btn--full submit--popup">
+          </form>
+        </div>
+
+        <div class="price-right">
+          <img src="images/price-img.png" alt="" class="price__img">
         </div>
       </div>
     </div>
@@ -690,6 +735,66 @@
           <span class="popup-subtitle">Мы отправили коммерческое предложение <br>
             на указанный e-mail. Проверьте свою почту</span>
           <img src="images/popup-success.png" alt="" class="popup-success">
+        </div>
+      </div>
+
+      <div class="popup-block popup-block--region" id="popup-block-region">
+        <div class="popup-block__content">
+          <strong class="popup-region__title">Выбор региона</strong>
+          <div class="popup-region__list">
+            <strong class="popup-region__list_letter">А</strong>
+            <ul class="popup-region__list_block">
+              <li>Абакан</li>
+              <li>Азов</li>
+              <li>Александров</li>
+              <li>Алексин</li>
+              <li>Альметьевск</li>
+              <li>Анапа</li>
+              <li>Ангарск</li>
+              <li>Анжеро-Судженск</li>
+              <li>Апатиты</li>
+              <li>Арзамас</li>
+              <li>Армавир</li>
+              <li>Арсеньев</li>
+              <li>Артем</li>
+              <li>Архангельск</li>
+              <li>Асбест</li>
+              <li>Астрахань</li>
+              <li>Ачинск</li>
+            </ul>
+            <strong class="popup-region__list_letter">Б</strong>
+            <ul class="popup-region__list_block">
+              <li>Балаково</li>
+              <li>Балахна</li>
+              <li>Балашиха</li>
+              <li>Балашов</li>
+              <li>Барнаул</li>
+              <li>Батайск</li>
+              <li>Белгород</li>
+              <li>Белово</li>
+              <li>Белогорск</li>
+              <li>Белорецк</li>
+              <li>Белореченск</li>
+              <li>Бердск</li>
+              <li>Березники</li>
+              <li>Бийск</li>
+              <li>Биробиджан</li>
+              <li>Благовещенск</li>
+              <li>Бор</li>
+              <li>Борисоглебск</li>
+              <li>Боровичи</li>
+              <li>Братск</li>
+              <li>Брянск</li>
+              <li>Бузулук</li>
+              <li>Буйнакск</li>
+            </ul>
+            <strong class="popup-region__list_letter">В</strong>
+            <ul class="popup-region__list_block">
+              <li>Великие Луки</li>
+              <li>Великий Новгород</li>
+              <li>Верхняя Пымша</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
