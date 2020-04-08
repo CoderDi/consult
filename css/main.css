@@ -1775,8 +1775,19 @@ BANNER
 .menu-main-mobile {
   display: none;
 }
-
-
+.single-calc-img {
+  position: absolute;
+  bottom: -70px;
+  right: 0;
+  height: 100%;
+  width: auto;
+}
+.calc-single .calc-step {
+  min-height: 500px;
+}
+.calc-single .calc-footer {
+  justify-content: flex-start;
+}
 
 
 
