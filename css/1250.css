@@ -1,0 +1,38 @@
+@media screen and (max-width: 1250px) {
+  .menu-btn {
+    position: static;
+    width: 80px;
+    height: 80px;
+  }
+  .menu-btn span {
+    display: none;
+  }
+  .menu-btn__icon {
+    margin: 0;
+  }
+  .socials--header {
+    flex-grow: 0;
+  }
+  .header-contacts {
+    padding-right: 30px;
+  }
+  .header__wrapper {
+    padding: 0;
+  }
+  .header {
+    padding-top: 0;
+    margin-left: -15px;
+  }
+  .menu-close {
+    top: 20px;
+    left: 20px;
+  }
+  .menu-header {
+    padding: 0 20px 0 115px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  .menu-main__container {
+    padding-left: 115px;
+  }
+}
