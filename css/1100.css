@@ -69,4 +69,81 @@
     order: 5;
     width: 100%;
   }
+  .popup-block--region {
+    width: 700px;
+    padding-right: 20px;
+  }
+  .popup-region__list_block {
+    columns: 2;
+  }
+
+  .price__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .price__form {
+    margin: 0 auto;
+  }
+  .price-left {
+    padding-top: 50px;
+    order: 2;
+    width: 100%;
+  }
+  .user {
+    width: 50%;
+  }
+  
+  .calc {
+    padding: 90px 100px 80px;
+  }
+  .check-img img {
+    width: 115px;
+    height: 115px;
+  }
+  .check-img {
+    height: 115px;
+  }
+  .check--big {
+    padding: 20px;
+  }
+  .calc-block {
+    padding: 30px;
+  }
+  .checks-list {
+    margin-left: -15px;
+  }
+  .user.in-slider .user__container {
+    width: 280px;
+    margin: 0 auto;
+  }
+  .user.in-slider {
+    margin: 0 0 130px;
+  }
+  .team-list .slick-arrow {
+    bottom: 50px;
+    top: auto;
+  }
+  .team-list .slick-prev {
+    left: calc(50% - 95px)
+  }
+  .team-list .slick-next {
+    right: calc(50% - 95px)
+  }
+  .user-slider-dots {
+    position: relative;
+  }
+  .user-slider-dots.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0.1em;
+    color: #4F4F4F;
+    top: -90px;
+  }
+
+
 }

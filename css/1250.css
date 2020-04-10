@@ -35,4 +35,73 @@
   .menu-main__container {
     padding-left: 115px;
   }
+  .about__wrapper {
+    flex-wrap: wrap;
+  }
+  .about-content {
+    width: 100%;
+    padding: 0 0 20px;
+    text-align: center;
+  }
+  .about__text {
+    text-align: left;
+  }
+  .about-slider {
+    margin: 0 auto;
+  }
+  .about-slider-nav {
+    position: static;
+    padding: 20px 70px 0;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
+  .banner__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  .banner-img {
+    padding-top: 35px;
+  }
+  .banner-img img {
+    position: static;
+    width: 100%;
+    max-width: 770px;
+    height: auto;
+  }
+  .banner-title {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+  .banner-shape1 {
+    left: -80px;
+    top: 50px;
+    height: 500px;
+  }
+  .banner-shape2 {
+    left: -10px;
+    top: 45px;
+    height: 90px;
+    width: 80px;
+  }
+  .calc-title {
+    max-width: 470px;
+    margin: 0 auto 70px;
+  }
+  .team {
+    padding-top: 0;
+  }
+  .single-title {
+    text-align: center;
+    font-size: 54px;
+  }
+  .single-banner {
+    padding-top: 30px;
+  }
+  .single-banner-img {
+    display: none;
+  }
 }
