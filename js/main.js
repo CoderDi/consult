@@ -39,6 +39,11 @@ $(document).ready(function(){
     $("#popup-block-call").show();
     $(".popup").addClass("popup--show");
   });
+  $(".js-getquest").click(function(){
+    $(".popup-block").hide();
+    $("#popup-block-quest").show();
+    $(".popup").addClass("popup--show");
+  });
   $(".js-getcity").click(function(){
     $(".popup-block").hide();
     $("#popup-block-region").show();
@@ -168,6 +173,19 @@ $(document).ready(function(){
 
     $("#calc-step-current").text(currentStep);
     $(".calc-step-line i").css("width", currentStep * 100 / countStep + "%");
+  });
+
+
+  $(".faq-item__top").click(function(){
+    $(this).parents(".faq-item").toggleClass("active");
+    $(this).parents(".faq-item").find(".faq-item__content").slideToggle(200);
+  });
+
+  $(".wie-plash").click(function(){
+    $(".wie-plash").removeClass("active");
+    $(this).addClass("active");
+    $(".wie-center-toggle").hide();
+    $("." + $(this).data("plash")).show();
   });
 
 
