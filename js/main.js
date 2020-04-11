@@ -34,7 +34,11 @@ $.fn.setCursorPosition = function(pos) {
 
 $(document).scroll(function(){
   if ($(this).scrollTop() > window.innerHeight) {
-    $(".float").addClass("visible");
+    if (($(this).scrollTop() + window.innerHeight) < $(".footer").offset().top) {
+      $(".float").addClass("visible");
+    } else {
+      $(".float").removeClass("visible");
+    }
     $(".open-float").addClass("visible");
   } else {
     $(".float").removeClass("visible");
@@ -211,7 +215,7 @@ $(document).ready(function(){
 
   $(".read-more").click(function(){
     $(this).toggleClass("active");
-    $(this).next(".what-wrap").slideToggle(200);
+    $(".what-wrap").slideToggle(200);
   });
 
   $(".js-float-btn").click(function(){
@@ -255,7 +259,8 @@ $(document).ready(function(){
   });
 
   $(".js-docs-slider").slick({
-    infinite: true,
+    infinite: false,
+    initialSlide: 1,
     arrows: true,
     dots: false,
     slidesToShow: 3,

@@ -2294,6 +2294,7 @@ BANNER
   position: relative;
 }
 .wie-center-img {
+  position: relative;
   display: block;
   width: 350px;
   margin-bottom: 20px;
@@ -2303,9 +2304,26 @@ BANNER
   box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.05);
   border-radius: 2px;
 }
+.wie-center-img:hover::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  background: url(../images/icons.svg#zoom) no-repeat center, -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
+  background-size: 80px 80px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.wie-center-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .wie-center-text {
   display: block;
-  max-width: 300px;
+  max-width: 250px;
   font-weight: normal;
   font-size: 14px;
   line-height: 130%;
@@ -2333,7 +2351,7 @@ BANNER
   position: relative;
 }
 .wie-center__out img {
-  width: 280px;
+  /* width: 280px; */
 }
 .wie-center-toggle {
   display: none;
@@ -2637,10 +2655,10 @@ table td {
 .single-title > span::before {
   position: absolute;
   bottom: 6px;
-  left: 0;
+  left: -9px;
   content: '';
   z-index: -1;
-  width: 100%;
+  width: calc(100% + 18px);
   height: 20px;
   background: #B8A6FF;
   -webkit-transform: skewX(-40deg);
@@ -2883,6 +2901,23 @@ table td {
   float: left;
   background: none;
 }
+.just-left a {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.just-left a:hover::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  background: url(../images/icons.svg#zoom) no-repeat center, -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
+  background-size: 80px 80px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
 .just-left::before {
   position: absolute;
   bottom: -70px;
@@ -2904,7 +2939,7 @@ table td {
 .just-img {
   width: 250px;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 .just-left__text {
   padding: 0;
@@ -2918,10 +2953,6 @@ table td {
 .what-title-mobile {
   display: none;
 }
-
-
-
-
 
 
 
@@ -2958,7 +2989,8 @@ table td {
   .wie .wrapper,
   .just-right,
   .calc--single .wrapper,
-  .faq-wrapper {
+  .faq-wrapper,
+  .price__wrapper {
     padding-right: 230px;
   }
   .faq-user {
@@ -2986,6 +3018,10 @@ table td {
     position: relative;
     left: -100px;
   }
+  
+  .price__img {
+    width: 450px;
+  }
 }
 
 @media screen and (max-width: 1250px) {
@@ -2993,6 +3029,9 @@ table td {
     position: static;
     width: 80px;
     height: 80px;
+  }
+  .price__img {
+    width: 100%;
   }
   .menu-btn span {
     display: none;
@@ -3070,8 +3109,8 @@ table td {
     text-align: center;
   }
   .banner-shape1 {
-    left: -80px;
-    top: 50px;
+    left: -110px;
+    top: 10px;
     height: 500px;
   }
   .banner-shape2 {
@@ -3141,7 +3180,8 @@ table td {
   }
   .what-wrapper,
   .just-right,
-  .faq-wrapper {
+  .faq-wrapper,
+  .price__wrapper {
     padding-right: 0px;
   }
   .wie .wrapper,
@@ -3492,6 +3532,18 @@ table td {
   .just-title {
     display: none;
   }
+  .wie__text {
+    text-align: center;
+  }
+  .wie-center-text {
+    max-width: 250px;
+  }
+  .wie-center-bg::before {
+    top: -24px;
+    left: -75px;
+    width: 250px;
+    height: 250px;
+  }
   .just-title-mobile {
     display: block;
     text-align: center;
@@ -3569,6 +3621,23 @@ table td {
 
 
 @media screen and (max-width: 767px) {
+  .wie-center-content {
+    height: auto;
+    background: none;
+    box-shadow: none;
+  }
+  .wie-center-bg {
+    width: 100%;
+    height: 320px;
+    bottom: 0;
+    top: auto;
+    background: #fff;
+    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.1);
+  }
+  .wie-center {
+    padding-top: 0;
+  }
+
   .menu-footer {
     display: block;
     padding: 15px;
@@ -3970,6 +4039,8 @@ table td {
   .doc__plash::before { 
     top: -30px;
     left: -55px;
+    width: 180px;
+    height: 180px;
   }
   .doc-img-over {
     background-size: 60px 60px;
@@ -4013,7 +4084,7 @@ table td {
     right: calc(50% - 95px)
   }
   .docs-title .calc-step-title::before {
-    display: none;
+    /* display: none; */
   }
   .docs {
     padding: 50px 100px 0;
@@ -4039,6 +4110,10 @@ table td {
   .single-form {
     width: 100%;
     max-width: 400px;
+  }
+  .single-title > span::before {
+    left: -6px;
+    width: calc(100% + 10px);
   }
   .single-form__text {
     font-size: 14px;
@@ -4166,8 +4241,7 @@ table td {
     white-space: normal;
   }
   .wie-center__out img {
-    width: 90%;
-    max-width: 250px;
+    width: 100%;
   }
 
   .just-left {
@@ -4337,20 +4411,3 @@ table td {
     left: -5px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

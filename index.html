@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="libs/lightbox/css/lightbox.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -474,7 +475,10 @@
     <div class="wrapper">
       <div class="about__wrapper">
         <div class="about-content">
-          <h2 class="calc-step-title about-title"><span>О нашей компании</span></h2>
+          <h2 class="docs-title wie-title-main what-title about-title">
+            <span class="calc-step-title about-title"><span>О нашей </span></span>
+            <span class="calc-step-title about-title"><span>компании </span></span>
+          </h2>
           <p class="about__text">Наличие института по переподготовке кадров позволяет человеку, который когда-то получил профессию, быстро, доступно актуализировать свои навыки в конкретной отрасли, получить новую профессию. Это повышает конкурентоспособность специалиста на рынке труда, обеспечивает статус работодателя.</p>
           <p class="about__text">Получить новую специальность, быстро пройти переподготовку можно в нашем учебном центре, предоставляющему такую возможность всем. Действует дистанционная система образования. Для прохождения курсов, повышения квалификации, переподготовки нужен интернет, личное желание субъекта.</p>
         </div>
@@ -601,8 +605,11 @@
   <section class="docs">
     <div class="wrapper">
       <h2 class="docs-title">
-        <span class="calc-step-title about-title"><span>Документы, позволяющие нам</span></span>
-        <span class="calc-step-title about-title"><span>заниматься данной деятельностью</span></span>
+        <span class="calc-step-title about-title"><span>Документы, </span></span>
+        <span class="calc-step-title about-title"><span>позволяющие нам</span></span>
+        <span class="calc-step-title about-title"><span>заниматься </span></span>
+        <span class="calc-step-title about-title"><span>данной </span></span>
+        <span class="calc-step-title about-title"><span>деятельностью</span></span>
       </h2>
 
       <div class="docs-slider js-docs-slider">
@@ -610,7 +617,7 @@
           <div class="doc__container">
             <div class="doc__img">
               <img src="images/doc1.jpg" alt="">
-              <a class="doc-img-over"></a>
+              <a href="images/doc1.jpg" data-lightbox="doc1" class="doc-img-over"></a>
             </div>
             <div class="doc__plash">
               <strong class="doc__plash_title">Уведомление</strong>
@@ -623,7 +630,7 @@
           <div class="doc__container">
             <div class="doc__img">
               <img src="images/doc2.png" alt="">
-              <a class="doc-img-over"></a>
+              <a href="images/doc2.png" data-lightbox="doc2"  class="doc-img-over"></a>
             </div>
             <div class="doc__plash">
               <strong class="doc__plash_title">Уведомление</strong>
@@ -636,7 +643,7 @@
           <div class="doc__container">
             <div class="doc__img">
               <img src="images/doc1.jpg" alt="">
-              <a class="doc-img-over"></a>
+              <a href="images/doc1.jpg" data-lightbox="doc3"  class="doc-img-over"></a>
             </div>
             <div class="doc__plash">
               <strong class="doc__plash_title">Уведомление</strong>
@@ -649,7 +656,7 @@
           <div class="doc__container">
             <div class="doc__img">
               <img src="images/doc1.jpg" alt="">
-              <a class="doc-img-over"></a>
+              <a href="images/doc1.jpg" data-lightbox="doc4"  class="doc-img-over"></a>
             </div>
             <div class="doc__plash">
               <strong class="doc__plash_title">Уведомление</strong>
@@ -809,6 +816,7 @@
 
   <script src="libs/jquery/jquery-3.3.1.min.js"></script>
   <script src="libs/slick/slick.min.js"></script>
+  <script src="libs/lightbox/js/lightbox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
