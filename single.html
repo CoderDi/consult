@@ -6,44 +6,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/1250.css">
-  <link rel="stylesheet" href="css/1100.css">
-  <link rel="stylesheet" href="css/767.css">
 </head>
 <body>
-  <!-- <div class="float">
-    <div class="float-container scrollable">
-      <div class="float-top">
-        <div class="float-img"><img src="images/float-img.png" alt=""></div>
-        <strong class="float-title">
-          <span><span>Сертификат </span></span> <br>
-          <span><span>ГОСТ Р ИСО 9001 2015</span></span>
-        </strong>
-        <span class="float-tth">Срок изготовления: <b>3 дня</b></span>
-        <span class="float-tth">Стоимость: <b>2000 ₽</b> </span>
-        <span class="float-btn btn btn--full js-float-btn">Заказать <i></i></span>
-      </div>
-      <form class="float-form">
-        <input type="text" class="input input--float" placeholder="Имя">
-        <input type="tel" class="input input--float" placeholder="Телефон">
-        <input type="email" class="input input--float" placeholder="Email">
-        <input type="submit" value="Задать вопрос" class="submit btn btn--full submit--float">
-      </form>
-      <div class="float-bottom">
-        <div class="user float-user user2">
-          <div class="user__container">
-            <img src="images/user2.png" alt="">
+  <div class="open-float">
+    <span>Заказать сертификат</span>
+    <i></i>
+  </div>
+  <div class="float">
+    <div class="float-bg js-float-close"></div>
+    <div class="float-wrap">
+      <span class="menu-close float-close btn--full js-float-close"></span>
+      <div class="float-container scrollable">
+        <div class="float-top">
+          <div class="float-img"><img src="images/float-img.png" alt=""></div>
+          <div>
+            <strong class="float-title">
+              <span><span>Сертификат </span></span> <br>
+              <span><span>ГОСТ Р ИСО 9001 2015</span></span>
+            </strong>
+            <span class="float-tth">Срок изготовления: <b>3 дня</b></span>
+            <span class="float-tth">Стоимость: <b>2000 ₽</b> </span>
+          </div>
+          <span class="float-btn btn btn--full js-float-btn">Заказать <i></i></span>
+        </div>
+        <form class="float-form">
+          <input type="text" class="input input--float" placeholder="Имя">
+          <input type="tel" class="input input--float" placeholder="Телефон">
+          <input type="email" class="input input--float" placeholder="Email">
+          <input type="submit" value="Задать вопрос" class="submit btn btn--full submit--float">
+        </form>
+        <div class="float-bottom">
+          <div class="user float-user user2">
+            <div class="user__container">
+              <img src="images/user2.png" alt="">
+            </div>
+          </div>
+          <div>
+            <strong class="float-user-title"><span>Ваш менеджер</span></strong>
+            <span class="float-user-name">Александр Дмитриев</span>
+            <div class="float-user-contacts">
+              <a href="tel:8 (800) 707 14 20" class="header-contacts__link phone header__phone">8 (800) 707 14 20</a>
+              <a href="mailto:info@petroconsalt.ru" class="header-contacts__link mail header__mail">info@petroconsalt.ru</a>
+            </div>
           </div>
         </div>
-        <strong class="float-user-title"><span>Ваш менеджер</span></strong>
-        <span class="float-user-name">Александр Дмитриев</span>
-        <div class="float-user-contacts">
-          <a href="tel:8 (800) 707 14 20" class="header-contacts__link phone header__phone">8 (800) 707 14 20</a>
-          <a href="mailto:info@petroconsalt.ru" class="header-contacts__link mail header__mail">info@petroconsalt.ru</a>
-        </div>
       </div>
+
     </div>
-  </div> -->
+  </div>
+
   
   <header class="header" id="top">
     <div class="wrapper">
@@ -266,14 +277,22 @@
           <h1 class="single-title">Сертификация <br>
             <span><span>ГОСТ Р ИСО 9001 2015</span></span> <br>
             в Москве</h1>
-          <form class="single-form">
-            <span class="single-form__text">Заполните форму ниже и оставьте заявку на получение сертификата</span>
-            <div class="single-form__container">
-              <input type="text" class="input input--single" placeholder="Имя">
-              <input type="tel" class="input input--single" placeholder="Телефон">
-              <input type="submit" value="Заказать" class="submit btn btn--full input--single">
+          <div class="single-form-block">
+            <form class="single-form">
+              <span class="single-form__text">Заполните форму ниже и оставьте заявку на получение сертификата</span>
+              <div class="single-form__container">
+                <input type="text" class="input input--single" placeholder="Имя">
+                <input type="tel" class="input input--single" placeholder="Телефон">
+                <input type="submit" value="Заказать" class="submit btn btn--full input--single">
+              </div>
+            </form>
+            <div class="single-banner-img single-banner-img-mobile">
+              <div class="single-banner-img__container">
+                <img src="images/single-banner.png" alt="">
+              </div>
             </div>
-          </form>
+          </div>
+          
         </div>
         <div class="single-banner-img">
           <div class="single-banner-img__container">
@@ -287,6 +306,9 @@
   <section class="faq what">
     <div class="wrapper">
       <div class="what-wrapper">
+        <div class="what-title-mobile">
+          <h2 class="calc-step-title about-title what-title "><span>Что это за документ</span></h2>
+        </div>
         <div class="faq-user what-user">
           <img src="images/what-img.png" alt="" class="faq-user__img">
           <div class="faq-user-name what-user-name">
@@ -429,6 +451,10 @@
   <section class="just">
     <div class="wrapper">
       <div class="just__wrapper">
+        <div class="just-title-mobile">
+          <h2 class="calc-step-title about-title just-title "><span>Обоснование законности</span></h2>
+        </div>
+        
         <div class="just-left">
           <img src="images/doc1.jpg" alt="" class="just-img">
           <div class="just-left__text">
@@ -445,7 +471,7 @@
             <div class="just-plash-container">
               <strong class="just-plash__title">Мы гарантируем легальность сертификата! </strong>
               <span class="just-plash__text">Гарантия признания сертификата любой организацией прописана в договоре</span>
-              <span class="btn--white just__btn">Посмотреть в договоре</span>
+              <span class="btn--white just__btn js-getdogovor">Посмотреть в договоре</span>
             </div>
           </div>
         </div>
@@ -465,7 +491,6 @@
 
         <div class="calc-content">
           <div class="calc-step calc-step1" id="calc-step1">
-            <img src="images/single-calc-bg.png" alt="" class="single-calc-img">
             <strong class="calc-step-title"><span>сертификаты исо</span></strong>
             <div class="step-columns">
               <div class="step-column">
@@ -494,6 +519,7 @@
                   </label>
                 </div>
               </div>
+              <img src="images/single-calc-bg.png" alt="" class="single-calc-img">
             </div>
           </div>
 
@@ -635,7 +661,7 @@
   <section class="faq">
     <div class="wrapper">
       <div class="faq-wrapper">
-        <div class="faq-user">
+        <div class="faq-user faq-user1">
           <img src="images/faq-user.png" alt="" class="faq-user__img">
           <div class="faq-user-name">
             Валентина <br>
@@ -800,6 +826,13 @@
           <span class="popup-subtitle">Мы отправили коммерческое предложение <br>
             на указанный e-mail. Проверьте свою почту</span>
           <img src="images/popup-success.png" alt="" class="popup-success">
+        </div>
+      </div>
+
+      <div class="popup-block popup-block--quest popup-block--call popup-block--dogovor" id="popup-block-dogovor">
+        <div class="popup-block__content">
+          <div class="popup-dogovor-block"><img src="images/dogovor.png" alt=""></div>
+          <div class="btn btn--full js-getcall popup-dogovor-btn">Получить консультацию</div>
         </div>
       </div>
 

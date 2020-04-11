@@ -429,7 +429,316 @@
   .docs {
     padding: 50px 100px 0;
   }
+  .single-banner {
+    padding-top: 0;
+  }
+  .single-banner .banner__wrapper {
+    padding-top: 20px;
+  }
+  .single-title {
+    font-size: 30px;
+  }
+  .single-title > span::before { 
+    height: 10px;
+    bottom: 2px;
+  }
+  .single-form-block {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .single-form {
+    width: 100%;
+    max-width: 400px;
+  }
+  .single-form__text {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .single-form__container {
+    padding: 30px 20px 10px;
+  }
+  .single-banner-img-mobile {
+    width: 100%;
+    max-width: 400px;
+    order: -1;
+    margin: 0;
+    padding: 0;
+  }
+  .single-banner-img::before {
+    left: 0;
+  }
+  .what-user {
+    float: none;
+    width: 100%;
+    max-width: 390px;
+  }
+  .what-list .what-title {
+    display: none;
+  }
+  .what-title-mobile {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .what-user img {
+    margin-bottom: 30px;
+    left: 0;
+  }
+  .what-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .what-content p {
+    font-size: 12px;
+  }
+  .what-content ol > li,
+  .what-content ul > li {
+    padding-left: 0;
+    font-size: 14px;
+  }
+  .table strong {
+    font-size: 14px;
+  }
+  table th, table td {
+    padding: 10px 5px;
+    font-size: 12px;
+    height: 30px;
+  }
+  .wie-title-main {
+    margin-bottom: 20px;
+  }
+  .wie__text {
+    font-size: 12px;
+  }
+  .wie__flex {
+    padding-top: 30px;
+    align-items: center;
+  }
+  .wie-center, .wie-block {
+    position: static;
+    width: 100%;
+    max-width: 400px;
+  }
+  .wie-plash, .wie-center {
+    width: 100%;
+  }
+  .what-content ol ul > li::before { 
+    margin-left: 0;
+  }
+  .wie-center {
+    margin-bottom: 30px;
+  }
+  .wie-plash {
+    height: 70px;
+    position: relative;
+  }
+  .wie-plash-text,
+  .wie-plash-num {
+    font-size: 14px;
+  }
+  .wie-center-text {
+    font-size: 12px;
+  }
+  .wie-plash::before {
+    position: absolute;
+    content: '';
+    top: calc(50% - 3px);
+    right: 15px;
+    border-top: 7px solid #828282;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    transition: transform .2s ease-in-out;
+  }
+  .wie-plash.active::before,
+  .wie-block-right .wie-plash.active::before {
+    width: 0;
+    height: 0;
+    background: none;
+    border-top-color: #FFAB01;
+    transform: rotate(180deg);
+    top: calc(50% - 3px);
+  }
+  .just {
+    padding-top: 45px;
+  }
+  .just-title-mobile .just-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+    white-space: normal;
+  }
+  .wie-center__out img {
+    width: 90%;
+    max-width: 250px;
+  }
+
+  .just-left {
+    float: none;
+    margin: 0 auto 55px;
+    width: 100%;
+    max-width: 400px;
+  }
+  .just-left::before {
+    margin: 0;
+    width: 100%;
+    min-width: 350px;
+  }
+  .just-text {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  .just-plash {
+    padding: 35px 20px;
+  }
+  .just-plash__title {
+    font-size: 14px;
+  }
+  .just-plash__text {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .just__btn {
+    font-size: 16px;
+  }
+  .single-calc-img {
+    position: static;
+    width: 100%;
+    max-width: 400px;
+  }
+  .faq-wrapper {
+    padding-top: 50px;
+  }
+  .faq-title {
+    margin-bottom: 40px;
+  }
+  .faq-item__quest {
+    font-size: 12px;
+  }
+  .faq-item__top i {
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+  }
+  .faq-item__content p {
+    font-size: 12px;
+  }
+  .faq-item__content {
+    padding: 15px 15px 25px;
+  }
+  .faq-user1 {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .faq-user1 .faq-user__img {
+    width: 100%;
+  }
+  .faq-user-plash {
+    width: 100%;
+    max-width: 290px;
+    margin: 0 auto;
+  }
+  .faq-user1 .faq-user-name {
+    left: 44%;
+  }
+  .what-user-name {
+    top: auto;
+    bottom: -30px;
+  }
+  .open-float.visible {
+    bottom: 0;
+    top: auto;
+    width: 320px;
+    height: 40px;
+    border-radius: 20px 20px 0 0;
+    left: calc(50% - 160px);
+  }
+  .open-float span {
+    transform: none;
+    position: static;
+    display: block;
+    width: auto;
+    padding: 12px 0 0 33px;
+  }
+  .open-float i {
+    left: auto;
+    right: 5px;
+  }
+  
   
 
 
 }
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+  .float-wrap {
+    width: 100%;
+    border-radius: 0;
+    padding: 35px 0px 25px 25px;
+  }
+  .float-container {
+    max-height: calc(100vh - 60px);
+    padding: 0 25px 30px 0;
+  }
+  .float-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .float-img {
+    margin-right: 15px;
+    width: 95px;
+    margin-bottom: 0;
+  }
+  .input--float {
+    height: 50px;
+  }
+  .submit--float {
+    font-size: 16px;
+  }
+  .float-img img {
+    width: 100%;
+    height: auto;
+  }
+  .float-close {
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    right: 15px;
+    left: auto;
+    background: url(../images/icons.svg#popup-close) no-repeat center;
+  }
+  .float-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .float-user {
+    width: 100px;
+    margin: 0 10px 0 0;
+  }
+  .float-user .user__container::before {
+    width: 116px;
+    height: 142px;
+    top: -6px;
+    left: -5px;
+  }
+}
+
+
+
+
+
+
+
+
+
+

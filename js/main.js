@@ -32,6 +32,22 @@ $.fn.setCursorPosition = function(pos) {
     }
   });
 
+$(document).scroll(function(){
+  if ($(this).scrollTop() > window.innerHeight) {
+    $(".float").addClass("visible");
+    $(".open-float").addClass("visible");
+  } else {
+    $(".float").removeClass("visible");
+    $(".open-float").removeClass("visible");
+  }
+
+  if ($(this).scrollTop() > 0) {
+    $(".header").addClass("active");
+  } else {
+    $(".header").removeClass("active");
+  }
+});
+
 $(document).ready(function(){
 
   $(".js-getcall").click(function(){
@@ -42,6 +58,11 @@ $(document).ready(function(){
   $(".js-getquest").click(function(){
     $(".popup-block").hide();
     $("#popup-block-quest").show();
+    $(".popup").addClass("popup--show");
+  });
+  $(".js-getdogovor").click(function(){
+    $(".popup-block").hide();
+    $("#popup-block-dogovor").show();
     $(".popup").addClass("popup--show");
   });
   $(".js-getcity").click(function(){
@@ -195,6 +216,12 @@ $(document).ready(function(){
 
   $(".js-float-btn").click(function(){
     $(this).parents(".float").addClass("active");
+  });
+  $(".open-float").click(function(){
+    $(".float").addClass("float--open");
+  });
+  $(".js-float-close").click(function(){
+    $(".float").removeClass("float--open");
   });
 
 

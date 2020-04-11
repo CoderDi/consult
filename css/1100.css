@@ -144,6 +144,28 @@
     color: #4F4F4F;
     top: -90px;
   }
+  .header {
+    position: fixed;
+    z-index: 90;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 0;
+    background: #ffffff;
+    margin: 0;
+  }
+  .header.active {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.11);
+  }
+  .header .wrapper {
+    padding-left: 0;
+  }
+  .header.active .btn--header {
+    box-shadow: none;
+  }
+  body {
+    padding-top: 100px;
+  }
 
 
 }
