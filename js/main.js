@@ -100,8 +100,10 @@ $(document).ready(function(){
   $(".js-menu-scroll").scroll(function(){
     if ($(this).scrollTop() > 0) {
       $(this).parents(".menu").find(".menu-header").addClass("active");
+      $(this).parents(".menu").find(".menu-footer").addClass("active");
     } else {
       $(this).parents(".menu").find(".menu-header").removeClass("active");
+      $(this).parents(".menu").find(".menu-footer").removeClass("active");
     }
   });
   $(".check--big input").on("change", function(){

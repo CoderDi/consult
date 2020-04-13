@@ -426,7 +426,8 @@ body, html {
 .menu-header {
   padding: 45px 65px 30px 140px;
 }
-.menu-header.active {
+.menu-header.active,
+.menu-footer.active {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.23);
 }
 .menu-title {
@@ -571,6 +572,7 @@ body, html {
   -webkit-box-align: center;
           align-items: center;
   padding-left: 28px;
+  padding-right: 40px;
   height: 46px;
   border-radius: 60px;
   cursor: pointer;
@@ -871,10 +873,10 @@ BANNER
 .calc-step-title::before {
   position: absolute;
   bottom: 0px;
-  left: -5px;
+  left: -6px;
   content: '';
   width: 100%;
-  width: calc(100% + 10px);
+  width: calc(100% + 12px);
   height: 10px;
   background: #B8A6FF;
   -webkit-transform: skewX(-40deg);
@@ -1041,6 +1043,7 @@ BANNER
   display: block;
   border: none;
   box-shadow: none;
+  font-family: "Montserrat";
   font-weight: normal;
   font-size: 14px;
   color: #333333;
@@ -1219,6 +1222,9 @@ BANNER
 }
 .step-column {
   width: 50%;
+  
+  position: relative;
+  z-index: 2;
 }
 .step-last {
   -webkit-box-align: center;
@@ -1471,6 +1477,7 @@ BANNER
   top: -50px;
   left: -40px;
   background: url(../images/icons.svg#user-shape1) no-repeat center;
+  background-size: cover;
 }
 .user2 .user__container::before {
   top: -15px;
@@ -1828,6 +1835,9 @@ BANNER
 
 .faq-item {
   margin-bottom: 15px;
+  position: relative;
+  background: #FFFFFF;
+  border-radius: 60px;
 }
 .faq-title {
   margin-bottom: 70px;
@@ -2711,6 +2721,7 @@ table td {
   text-align: center;
 }
 .float-img {
+  display: block;
   margin-bottom: 10px;
 }
 .float-img img {
@@ -3564,7 +3575,7 @@ table td {
     padding-bottom: 80px;
   }
   .single-calc-img {
-    width: 400px;
+    width: 365px;
     height: auto;
   }
   .calc-single .calc-step {
@@ -3641,11 +3652,11 @@ table td {
   .menu-footer {
     display: block;
     padding: 15px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     border-top: 1px solid rgba(51, 51, 51, .2);
   }
   .menu-main {
-    height: calc(100% - 175px);
+    height: calc(100% - 165px);
     padding-right: 0;
   }
   .menu-main__container {
@@ -3877,6 +3888,11 @@ table td {
   .checkbox-text {
     font-size: 10px;
     padding-top: 4px;
+    text-align: left;
+  }
+  .checkbox-text {
+    font-size: 12px;
+    padding-top: 2px;
   }
   .check-custom,
   .checkbox-custom {
@@ -3948,6 +3964,11 @@ table td {
   }
   .calc-step-title::before {
     height: 10px;
+    bottom: 4px;
+  }
+  .calc .calc-step-title::before {
+    height: 8px;
+    bottom: 1px;
   }
   .about__text {
     font-size: 12px;
@@ -4137,6 +4158,8 @@ table td {
     float: none;
     width: 100%;
     max-width: 390px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .what-list .what-title {
     display: none;
@@ -4409,5 +4432,13 @@ table td {
     height: 142px;
     top: -6px;
     left: -5px;
+  }
+  .popup-content,
+  .popup-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
